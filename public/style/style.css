@@ -1,0 +1,92 @@
+body{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(53, 53, 53, 1);
+}
+
+aside{
+    flex: 1;
+}
+
+main{
+    flex: 4;
+}
+
+#tabs{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#tabs li{
+    padding: 10px;
+    color: white;
+    text-transform: lowercase;
+    font-size: 10px;
+}
+
+#tabs li.active{
+    background-color: #393c43;
+    font-weight: bold;
+}
+
+#tabs li:not(.active){
+    cursor: pointer;
+}
+
+#content{
+    height: 90vh;
+    position: relative;
+}
+
+#messages{
+    height: 100%;
+    background-color: rgba(53, 53, 53, 1);
+    overflow-y: scroll;
+    font-size: 10px;
+}
+
+#writing{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(53, 53, 53, 1);
+    color: white;
+}
+
+#messages div{
+    margin: 0;
+    padding: 10px;
+    color: white;
+}
+
+form{
+    /* background-color: rgb(14, 13, 13);
+     */
+     background-color: white;
+    display: flex;
+}
+
+form input{
+    font-size: 10px;
+}
+
+#name, #message{
+    padding: 10px;
+    background-color: rgba(53, 53, 53, 1);
+    color: white;
+    border: none;
+}
+#name{
+    flex: 1;
+
+}
+#message{
+    flex: 5;
+}
+button{
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: rgba(53, 53, 53, 1);
+    color: white;
+}
